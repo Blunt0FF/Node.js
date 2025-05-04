@@ -5,7 +5,7 @@ import User from './models/user.js'
 import bcrypt from 'bcrypt'
 import cors from 'cors'
 
-const app = express() // 👈 Сначала объявляем app
+const app = express() 
 
 app.use(express.json())
 app.use(cors({
