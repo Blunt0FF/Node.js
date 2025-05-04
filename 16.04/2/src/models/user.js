@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import sequelize from '../config/db'; // Предполагаем, что вы настроили соединение с базой данных
+import sequelize from '../config/db'; 
 
 const User = sequelize.define(
   'User', // Название модели
