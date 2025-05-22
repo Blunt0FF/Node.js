@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">ChatBot</div>
+    <div class="chat-messages" id="messages"></div>
+    <div class="chat-input">
+      <input id="input" autocomplete="off" placeholder="Type your message..." />
+      <button id="send">Send</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io()
+    const input = document.getElementById('input')
+    const send = document.getElementById('send')
+    const messages = document.getElementById('messages')
+
+    function appendMessage(text, className) {
+      const div = document.createElement('div')
+      div.textContent = text
+      div.className = className
+      messages.appendChild(div)
+      messages.scrollTop = messages.scrollHeight
+    }
+
+    send.addEventListener('click', () => {
+      const msg = input.value.trim()
+      if (msg !== '') {
+        socket.emit('chat message', msg)
+        appendMessage(`You: ${msg}`, 'message user')
+        input.value = ''
+      }
+    })
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') send.click()
+    })
+
+    socket.on('chat message', (msg) => {
+      appendMessage(`Bot: ${msg}`, 'message bot')
+    })
+  </script>
+</body>
+</html>
