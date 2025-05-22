@@ -1,0 +1,18 @@
+{
+  "login": "Login",
+  "register": "Register",
+  "email": "Email",
+  "password": "Password",
+  "name": "Name",
+  "submit": "Submit",
+  "users": "Users",
+  "welcome": "Welcome",
+  "logout": "Logout",
+  "your_balance": "Your balance",
+  "amount": "Amount",
+  "transactions": "Transactions",
+  "search": "Search",
+  "balance": "Balance",
+  "no_account": "Don't have an account?",
+  "already_have_account": "Already have an account?"
+}

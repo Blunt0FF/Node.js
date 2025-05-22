@@ -1,0 +1,18 @@
+{
+  "login": "Вход",
+  "register": "Регистрация",
+  "email": "Почта",
+  "password": "Пароль",
+  "name": "Имя",
+  "submit": "Отправить",
+  "users": "Пользователи",
+  "welcome": "Добро пожаловать",
+  "logout": "Выход",
+  "your_balance": "Ваш баланс",
+  "amount": "Сумма",
+  "transactions": "Транзакции",
+  "search": "Поиск",
+  "balance": "Баланс",
+  "no_account": "Нет аккаунта?",
+  "already_have_account": "Уже есть аккаунт?"
+}

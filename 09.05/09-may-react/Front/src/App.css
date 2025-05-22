@@ -1,0 +1,26 @@
+.form {
+  max-width: 400px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-left: auto;
+  padding: 15px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 10px 0;
+}
+.form__field label {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.form__field input {
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid black;
+  outline: none;
+  padding: 5px 10px;
+}

@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+**/.env
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.log
+*.sqlite
+*.sqlite3
+
+# OS
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm/
+
+# Coverage directory used by testing tools
+coverage/
+
+# dotenv backup or examples
+.env.backup
+.env.example
+
+# Misc
+*.tgz
