@@ -3,13 +3,13 @@ import express from 'express'
 import mongoose from 'mongoose'
 import postRoutes from './routes/postRoute.js'
 import userRoutes from './routes/userRoute.js'
-import cors from "cors";
-
+import cors from 'cors'
 const app = express()
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));app.use(express.json())
+app.use(express.json())
+app.use(cors())
+
 app.use('/api/auth', userRoutes)
 app.use('/api/user', postRoutes)
-
 const port = process.env.PORT || 3000
 const uri = process.env.MONGO_URI
 
